@@ -1,0 +1,25 @@
+# Core vision, geometry, and validation
+opencv-python>=4.8.0
+numpy>=1.24.0
+shapely>=2.0.0
+pydantic>=2.0.0
+
+# Event bridge & communication
+paho-mqtt>=2.0.0
+pyserial>=3.5
+
+# Testing & quality
+pytest>=7.4.0
+pytest-asyncio>=0.21.0
+
+# Backend API & WebSocket Server
+fastapi>=0.100.0
+uvicorn>=0.23.0
+python-multipart>=0.0.6
+websockets>=11.0.0
+
+# Optional demonstration dashboard & live perception
+streamlit>=1.30.0
+ultralytics>=8.0.0
+torch>=2.0.0
+torchvision>=0.15.0

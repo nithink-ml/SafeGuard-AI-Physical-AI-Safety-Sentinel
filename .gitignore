@@ -1,0 +1,49 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.pt
+*.onnx
+*.engine
+
+# C / C++ / ESP-IDF build artifacts
+build/
+sdkconfig
+sdkconfig.old
+*.bin
+*.elf
+*.map
+managed_components/
+dependencies.lock
+
+# Virtual environments
+venv/
+env/
+.venv/
+ENV/
+
+# Testing and coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Logs and databases
+*.log
+*.sqlite3
+
+# IDE and OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.dmg
+*.pkg
+
+# Sensitive local configurations
+configs/app-config.local.json
+.env
+
+# Frontend dependencies and builds
+node_modules/
+dist/
+.vite/

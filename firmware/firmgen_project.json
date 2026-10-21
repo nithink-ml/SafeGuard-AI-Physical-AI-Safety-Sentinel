@@ -1,0 +1,39 @@
+{
+  "firmgen_version": "0.4.1",
+  "project_name": "SafeGuard AI — Embedded Firmware Subsystem",
+  "orbit_project_id": "safeguard-ai-sentinel-firmware",
+  "hardware_target": {
+    "mcu": "ESP32-WROOM-32D",
+    "architecture": "Xtensa dual-core 32-bit LX6",
+    "frequency_mhz": 240,
+    "flash_size_mb": 4,
+    "sram_kb": 520,
+    "rtos": "FreeRTOS (ESP-IDF v5.5)"
+  },
+  "context_inputs": {
+    "coding_standard": "BARR-C:2018 (Embedded C Coding Standard)",
+    "schematics_source": "firmware/README.md#pinout-schematic",
+    "pin_map": {
+      "PIN_RED_WARNING_LED": 21,
+      "PIN_PIEZO_BUZZER": 18,
+      "PIN_MANUAL_RESET_BTN": 0,
+      "UART_PORT": 0,
+      "UART_BAUD": 115200
+    }
+  },
+  "workflow_state": {
+    "prd_source": "firmware/firmgen-prd.md",
+    "prd_status": "FROZEN_AND_ACCEPTED",
+    "total_requirements": 10,
+    "explicit_requirements": 7,
+    "inferred_requirements": 3,
+    "traceability_status": "VERIFIED_100_PERCENT"
+  },
+  "agent_swarm_stages": {
+    "agent_01_requirements": "COMPLETED (All 10 REQs Categorized, Reviewed & Frozen)",
+    "agent_02_architect": "COMPLETED (Modular FreeRTOS FSM Task Architecture)",
+    "agent_03_code_generator": "COMPLETED (BARR-C Compliant Embedded C Implementation)",
+    "agent_04_compiler": "STAGED (ESP-IDF v5.5 CMake Build Files)",
+    "agent_05_validation": "VERIFIED_IN_TWIN (27/27 Acceptance Criteria Passing in Host Simulator)"
+  }
+}

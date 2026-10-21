@@ -1,0 +1,46 @@
+{
+  "system": {
+    "system_name": "SafeGuard AI Physical Sentinel",
+    "deployment_mode": "simulation",
+    "debug": true
+  },
+  "perception": {
+    "video_source": 0,
+    "frame_width": 1280,
+    "frame_height": 720,
+    "fps_target": 30,
+    "model_name": "yolov8n.pt",
+    "confidence_threshold": 0.55,
+    "nms_iou_threshold": 0.45,
+    "persistence_frames": 3,
+    "clearance_dwell_frames": 5,
+    "zones_config_path": "configs/zones.json"
+  },
+  "bridge": {
+    "transport_type": "mock",
+    "mqtt": {
+      "broker_host": "localhost",
+      "broker_port": 1883,
+      "client_id": "safeguard_perception_bridge",
+      "topic_events": "safeguard/events",
+      "topic_telemetry": "safeguard/telemetry/+",
+      "keepalive_sec": 60,
+      "reconnect_delay_sec": 3
+    },
+    "serial": {
+      "port": "COM3",
+      "baud_rate": 115200,
+      "timeout_sec": 1.0
+    }
+  },
+  "firmware": {
+    "target_device": "ESP32",
+    "pins": {
+      "red_led_gpio": 21,
+      "buzzer_gpio": 18,
+      "manual_reset_gpio": 0
+    },
+    "duplicate_window_size": 16,
+    "alarm_timeout_sec": 30
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "version": "1.0",
+  "zones": [
+    {
+      "zone_id": "zone-machine-danger-1",
+      "zone_name": "Robotic Machine Enclosure",
+      "severity": "CRITICAL",
+      "color_bgr": [0, 0, 255],
+      "polygon": [
+        [350, 400],
+        [780, 400],
+        [920, 720],
+        [240, 720]
+      ],
+      "description": "High hazard envelope surrounding hydraulic press and industrial arm."
+    },
+    {
+      "zone_id": "zone-agv-corridor-2",
+      "zone_name": "AGV High-Speed Transit Corridor",
+      "severity": "HIGH",
+      "color_bgr": [0, 165, 255],
+      "polygon": [
+        [50, 280],
+        [260, 280],
+        [260, 580],
+        [50, 580]
+      ],
+      "description": "Automated guided vehicle transit pathway crossing pedestrian aisle."
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+idf_component_register(
+    SRCS
+        "main.c"
+        "safety_controller.c"
+        "event_parser.c"
+        "telemetry.c"
+    INCLUDE_DIRS
+        "."
+    REQUIRES
+        driver
+        esp_timer
+        json
+        esp_system
+        esp_event
+        nvs_flash
+)

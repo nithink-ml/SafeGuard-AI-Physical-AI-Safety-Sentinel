@@ -1,0 +1,45 @@
+{
+  "audit_timestamp": "2026-10-16T17:20:00+05:30",
+  "system": {
+    "os": "Microsoft Windows 11 Home Single Language",
+    "version": "10.0.26200",
+    "architecture": "64-bit",
+    "python_version": "3.10.0"
+  },
+  "gpu": {
+    "detected": true,
+    "model": "NVIDIA GeForce RTX 2050 Laptop GPU",
+    "driver_version": "566.07",
+    "cuda_driver_supported": "12.7",
+    "vram_mb": 4096
+  },
+  "edge_ai_stack": {
+    "nvcc_installed": false,
+    "trtexec_installed": false,
+    "deepstream_installed": false,
+    "pipegen_cli_installed": false,
+    "note": "DeepStream & PipeGen require Linux/Jetson platform"
+  },
+  "embedded_stack": {
+    "firmgen_cli_installed": false,
+    "esp_idf_configured": false,
+    "serial_ports_detected": [],
+    "board_connected": false
+  },
+  "sensors_and_io": {
+    "webcam_detected": true,
+    "webcam_name": "USB2.0 HD UVC WebCam",
+    "status": "OK"
+  },
+  "communication": {
+    "local_mosquitto_running": false,
+    "paho_mqtt_installed": true,
+    "mock_transport_available": true
+  },
+  "verification_status": {
+    "simulation": "VERIFIED",
+    "pipegen_verified": "NOT VERIFIED / BLOCKED (Host environment is Windows 11)",
+    "firmware_verified": "NOT VERIFIED / BLOCKED (Physical ESP32 hardware missing)",
+    "closed_loop_verified": "SIMULATION VERIFIED / HARDWARE BLOCKED"
+  }
+}
